@@ -43,7 +43,7 @@ public class Engine implements SocketServerToEngineInterface, ProtocolToEngineIn
 	
 	public Engine() {
 		
-		visualizer = new Visualizer();
+//		visualizer = new Visualizer();
 		world = new World(this);
 		
 		clientHandlerMap = Collections.synchronizedMap(new HashMap<>());
