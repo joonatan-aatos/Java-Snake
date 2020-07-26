@@ -1,0 +1,47 @@
+
+@font-face {
+    font-family: snakeFont;
+    src: url(./res/DINOMOUSE-REGULAR.OTF);
+}
+
+body {
+    background-color: #aad751;
+}
+
+.mainHeaderContainer {
+    margin-top: 4vh;
+    margin-bottom: 6vh;
+    border-bottom: 2vh solid #318DE0;
+}
+
+.textContainer {
+    margin-bottom: 4vh;
+}
+
+.snakeHeader,
+.text,
+.listItem,
+.mainListItem {
+    font-family: snakeFont;
+    margin: 1vh;
+    color: #318DE0;
+}
+
+.snakeHeader {
+    margin: 0;
+    text-align: center;
+    font-size: 25vh;
+}
+
+.text {
+    font-size: 4vh;
+}
+
+.listItem {
+    font-size: 3.4vh;
+}
+
+.mainListItem {
+    font-size: 3.4vh;
+    margin-bottom: 3vh;
+}
