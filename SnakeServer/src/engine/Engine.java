@@ -41,7 +41,7 @@ public class Engine implements SocketServerToEngineInterface, ProtocolToEngineIn
 	private Map<Integer, ClientHandler> clientHandlerMap;
 	private Map<Integer, Player> playerMap;
 	
-	public Engine() {
+	public Engine(int port) {
 		
 //		visualizer = new Visualizer();
 		world = new World(this);
@@ -50,7 +50,7 @@ public class Engine implements SocketServerToEngineInterface, ProtocolToEngineIn
 		playerMap = Collections.synchronizedMap(new HashMap<>());
 		playerIdCounter = 0;
 		
-		server = new SocketServer(this, 5555);
+		server = new SocketServer(this, port);
 		
 		server.start();
 		
