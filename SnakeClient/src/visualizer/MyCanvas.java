@@ -270,7 +270,7 @@ public class MyCanvas extends Canvas {
 		if(countDownString == null)
 			return;
 		
-		if(countDownString.isBlank()) {
+		if(countDownString.isEmpty()) {
 			g.setFont(Visualizer.snakeGameFont.deriveFont(80f));
 			g.drawString(Visualizer.waitingForPlayers.getString(), 160, 450);
 			g.setFont(Visualizer.snakeGameFont.deriveFont(60f));
@@ -299,6 +299,9 @@ public class MyCanvas extends Canvas {
 	private void drawCenteredString(Graphics2D g, String text, int x, int y) {
 	    // Get the FontMetrics
 	    FontMetrics metrics = g.getFontMetrics(g.getFont());
+	    // Check for null pointer
+	    if(metrics == null)
+	    	return;
 	    // Determine the X coordinate for the text
 	    int xPos = x - metrics.stringWidth(text) / 2;
 	    // Determine the Y coordinate for the text (note we add the ascent, as in java 2d 0 is top of the screen)
