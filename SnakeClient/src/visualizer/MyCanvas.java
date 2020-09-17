@@ -300,7 +300,7 @@ public class MyCanvas extends Canvas {
 	    // Get the FontMetrics
 	    FontMetrics metrics = g.getFontMetrics(g.getFont());
 	    // Check for null pointer
-	    if(metrics == null)
+	    if(metrics == null || text == null)
 	    	return;
 	    // Determine the X coordinate for the text
 	    int xPos = x - metrics.stringWidth(text) / 2;
