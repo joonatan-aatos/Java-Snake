@@ -1,0 +1,22 @@
+
+java.io.OptionalDataException
+at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1691)
+at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:482)
+at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:440)
+at java.base/java.util.ArrayList.readObject(ArrayList.java:929)
+at java.base/jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at java.base/java.io.ObjectStreamClass.invokeReadObject(ObjectStreamClass.java:1175)
+at java.base/java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2295)
+at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2166)
+at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1668)
+at java.base/java.io.ObjectInputStream.defaultReadFields(ObjectInputStream.java:2434)
+at java.base/java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:2328)
+at java.base/java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:2166)
+at java.base/java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1668)
+at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:482)
+at java.base/java.io.ObjectInputStream.readObject(ObjectInputStream.java:440)
+at engine.ServerHandler.run(ServerHandler.java:136)
+at java.base/java.lang.Thread.run(Thread.java:834)
+
